@@ -4,9 +4,28 @@
   
     
     <entry>
+      <title>为自己的模型打打分</title>
+      <link href="/2020/03/11/wei-zi-ji-de-mo-xing-da-da-fen/"/>
+      <url>/2020/03/11/wei-zi-ji-de-mo-xing-da-da-fen/</url>
+      
+        <content type="html"><![CDATA[<h1 id="为自己的模型打打分"><a href="#为自己的模型打打分" class="headerlink" title="为自己的模型打打分"></a>为自己的模型打打分</h1><h2 id="好不好"><a href="#好不好" class="headerlink" title="好不好"></a>好不好</h2><p>怎么才能说一个模型好不好，这个说法过于笼统，过于主观。<br>那就具体一点，先来定性  </p><blockquote><p>定性：<br>这个模型能不能满足我们的任务目标要求?（是/不是）  </p></blockquote><p>这个问题就有是与不是这两个选项，不管怎么评估模型的效果，总有一个答案：是 或者 不是。<br>理想很丰满，现实很骨感。<br>这样的回答过于绝对了，非黑即白。<br>通常模型分类结果不会100%准确，拟合结果不会100%相等。<br>一个预测模型预测100个分类，错了6个，这个模型到底能不能用？<br>这些都不是靠感觉，靠是与不是能简单回答的问题了。<br>所以，要定量。</p><blockquote><p>定量<br>准确度、召回率、F1 等等</p></blockquote><h2 id="行不行"><a href="#行不行" class="headerlink" title="行不行"></a>行不行</h2><p><code>模型评价与你任务目标是绑在一起的</code></p><p>可能要考虑的几个方面  </p><ol><li>准不准:<br>模型能否将样本正确的分类。有很多县城的评价指标，precision、recall、F1_score等等，且能在任务中找出一定的实际意义<br>我自己简单实现了一个python的工具包，<a href="1">math_tools.py</a>（其实是针对ROC去弄的）</li><li>稳不稳：<br>收集所有的数据供模型学习，这既是一个可能无穷成本，且违背机器学习本意的一个事情。<br>在少量的样本上学习，在新样本上预测。对于没见过的新样本，怎样不预测错误，或者太偏离实际结果。<br>这就是模型的稳定性，有的也说鲁棒性。<br>典型反例：<a href="2">龙格现象</a></li></ol><p><img src="/images/20180406180222421.png" alt="img 龙格现象" title="龙格函数">  </p><p>最终在实际任务上行不行，还是和设定任务时制定的标准说了算：模型评价与你任务目标是绑在一起的。</p><h2 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h2><p>[1] <a href="https://github.com/zfxSteven/model-result-eval-metrics/blob/master/math_tools.py" target="_blank" rel="noopener">https://github.com/zfxSteven/model-result-eval-metrics/blob/master/math_tools.py</a><br>[2] <a href="https://blog.csdn.net/qq_39521554/article/details/79835492" target="_blank" rel="noopener">https://blog.csdn.net/qq_39521554/article/details/79835492</a>  </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 机器学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>My Hello World!</title>
-      <link href="/2020/03/11/Hello-World-0/"/>
-      <url>/2020/03/11/Hello-World-0/</url>
+      <link href="/2020/03/11/hello-world-0/"/>
+      <url>/2020/03/11/hello-world-0/</url>
       
         <content type="html"><![CDATA[<h1 id="Hello-World"><a href="#Hello-World" class="headerlink" title="Hello World"></a>Hello World</h1><p>这是独属于程序员的浪漫</p>]]></content>
       
